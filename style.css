@@ -1,0 +1,296 @@
+/* Variables pour les couleurs */
+:root {
+    --dark-bg: #1a1a1a;        /* Fond très sombre */
+    --light-text: #e0e0e0;     /* Texte clair pour contraste */
+    --medium-text: #b0b0b0;    /* Texte un peu plus doux */
+    --accent-blue-dark: #2a52be; /* Bleu foncé pour les accents et boutons */
+    --accent-blue-light: #4f80e0; /* Bleu clair pour les hover et petits accents */
+    --border-color: #333333;   /* Bordures discrètes */
+    --card-bg: #282828;        /* Fond des cartes projets/sections */
+}
+
+/* Style de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+.container {
+    width: 90%; /* Un peu plus large pour le minimalisme */
+    max-width: 1200px; /* Limite la largeur sur grand écran */
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: var(--dark-bg);
+    color: var(--light-text);
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: 1px solid var(--border-color); /* Bordure fine */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 2.2em; /* Plus grand */
+    font-weight: 300; /* Plus léger */
+}
+
+header p {
+    margin-top: 0;
+    font-size: 1em;
+    color: var(--medium-text);
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 15px; /* Espace */
+}
+
+header nav ul li {
+    display: inline-block; /* Utilisation de inline-block pour plus de contrôle */
+    margin: 0 15px; /* Espacement horizontal */
+}
+
+header nav a {
+    color: var(--medium-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav a::after { /* Soulignement dynamique */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-blue-light);
+    transition: width 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--light-text);
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    color: var(--light-text);
+    background: var(--accent-blue-dark);
+    padding: 12px 25px; /* Plus grand */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none; /* Pas de bordure */
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--accent-blue-light);
+    transform: translateY(-2px); /* Petit effet de soulèvement */
+}
+
+/* Sections générales */
+section {
+    padding: 60px 0; /* Plus d'espace vertical */
+    margin-bottom: 0; /* Pas de marge entre les sections */
+    background-color: var(--card-bg); /* Fond sombre pour les sections */
+    border-bottom: 1px solid var(--border-color); /* Séparateur subtil */
+}
+
+section:first-of-type {
+    margin-top: 0;
+}
+section:last-of-type {
+    border-bottom: none; /* Pas de bordure sur la dernière section */
+}
+
+
+section h2 {
+    text-align: center;
+    color: var(--accent-blue-light); /* Titres en bleu clair */
+    margin-bottom: 40px;
+    font-size: 2.5em; /* Plus grand */
+    font-weight: 300; /* Plus léger */
+    letter-spacing: 1px; /* Espacement léger */
+}
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1500x500/222/eee?text=JAVA+DEVELOPMENT') no-repeat center center/cover;
+    color: var(--light-text);
+    text-align: center;
+    padding: 120px 0; /* Plus de padding */
+    border-bottom: none; /* Pas de bordure */
+}
+
+.hero h2 {
+    color: var(--light-text); /* Le titre du hero reste blanc */
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    font-weight: 600; /* Plus marqué pour le titre principal */
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: var(--medium-text);
+}
+
+/* Section Projets */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Taille légèrement plus grande */
+    gap: 30px; /* Plus d'espace entre les cartes */
+    padding-top: 20px; /* Espace au-dessus */
+}
+
+.project-item {
+    background: var(--card-bg);
+    padding: 25px; /* Plus de padding */
+    border: 1px solid var(--border-color); /* Bordure discrète */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Ombre plus marquée pour le relief */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-8px); /* Effet plus prononcé */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5); /* Ombre à l'hover */
+}
+
+.project-item h3 {
+    color: var(--accent-blue-light);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.project-description {
+    font-size: 0.95em;
+    color: var(--medium-text);
+    margin-bottom: 20px;
+}
+
+.project-tech-stack {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px; /* Espacement des tags */
+}
+
+.project-tech-stack li {
+    background: var(--accent-blue-dark);
+    color: var(--light-text);
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: 1px solid var(--accent-blue-light); /* Bordure pour le contraste */
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 18px; /* Plus grand */
+    border: 1px solid var(--accent-blue-dark);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background-color: transparent; /* Bouton transparent */
+}
+
+.project-link:hover {
+    background-color: var(--accent-blue-dark);
+    color: var(--light-text);
+    border-color: var(--accent-blue-light);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0; /* Plus de padding */
+    background: var(--dark-bg);
+    color: var(--medium-text);
+    margin-top: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-item {
+        margin: 0 auto;
+        max-width: 400px; /* Limite la largeur sur mobile pour ne pas être trop étendu */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    section {
+        padding: 40px 0;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+}

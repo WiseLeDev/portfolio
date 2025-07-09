@@ -1,0 +1,29 @@
+[
+    {
+        "id": "java-task-manager",
+        "title": "Application de Gestion de Tâches (Spring Boot)",
+        "description": "Une application web complète pour gérer vos tâches quotidiennes, avec authentification utilisateur et persistance des données. Développée avec Spring Boot pour le backend et Thymeleaf pour le frontend.",
+        "techStack": ["Java", "Spring Boot", "Spring Security", "Thymeleaf", "MySQL", "Hibernate", "Maven"],
+        "githubLink": "https://github.com/tonprofil/java-task-manager-app",
+        "liveDemoLink": "https://demo.tonsite.com/task-manager"
+    },
+    {
+        "id": "java-text-adventure",
+        "title": "Jeu d'Aventure Textuel (Java Core)",
+        "description": "Un petit jeu d'aventure en ligne de commande, mettant en œuvre les principes de la programmation orientée objet (POO) et la gestion des entrées/sorties en Java.",
+        "techStack": ["Java Core", "POO", "Maven"],
+        "githubLink": "https://github.com/tonprofil/java-text-adventure-game",
+        "liveDemoLink": null
+    },
+    {
+        "id": "rest-api-inventory",
+        "title": "API REST de Gestion d'Inventaire",
+        "description": "Une API RESTful robuste pour la gestion d'inventaire de produits, permettant les opérations CRUD. Construite avec Java EE (Jakarta EE) et JAX-RS.",
+        "techStack": ["Java EE", "JAX-RS", "GlassFish", "PostgreSQL", "JSON"],
+        "githubLink": "https://github.com/tonprofil/inventory-rest-api",
+        "liveDemoLink": null
+    }
+    // Tu peux ajouter autant de projets que tu le souhaites ici.
+    // Chaque projet doit être un objet JSON séparé par une virgule, sauf le dernier.
+    // Assure-toi que les virgules sont correctement placées entre chaque objet projet.
+]
