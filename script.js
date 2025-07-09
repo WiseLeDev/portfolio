@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling pour les liens de navigation
-    document.querySelectorAll('nav a').forEach(anchor => {
+    // Le smooth scrolling pour la navigation peut être retiré car il n'y a plus de header avec nav links.
+    // Cependant, si tu as d'autres liens d'ancrage ailleurs, tu peux le laisser.
+    // Pour ce cas précis, on va le laisser car le bouton "Voir mes projets" du Hero utilise un lien d'ancrage.
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { // Cible tous les liens d'ancrage
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
@@ -10,13 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     // --- LOGIQUE POUR CHARGER ET AFFICHER LES PROJETS DEPUIS projects.json ---
     const projectGrid = document.querySelector('#projects .project-grid');
 
     async function loadAndDisplayProjects() {
         try {
             // Récupère les données du fichier projects.json
-            const response = await fetch('projets.json');
+            const response = await fetch('projets.json'); // Assure-toi que le nom du fichier est correct
             if (!response.ok) {
                 throw new Error(`Erreur HTTP: ${response.status}`);
             }

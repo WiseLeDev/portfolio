@@ -28,69 +28,6 @@ body {
     padding: 20px 0;
 }
 
-/* Header */
-header {
-    background: var(--dark-bg);
-    color: var(--light-text);
-    padding-top: 20px;
-    min-height: 60px;
-    border-bottom: 1px solid var(--border-color); /* Bordure fine */
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    padding-bottom: 5px;
-    font-size: 2.2em; /* Plus grand */
-    font-weight: 300; /* Plus léger */
-}
-
-header p {
-    margin-top: 0;
-    font-size: 1em;
-    color: var(--medium-text);
-}
-
-header nav ul {
-    padding: 0;
-    list-style: none;
-    margin-top: 15px; /* Espace */
-}
-
-header nav ul li {
-    display: inline-block; /* Utilisation de inline-block pour plus de contrôle */
-    margin: 0 15px; /* Espacement horizontal */
-}
-
-header nav a {
-    color: var(--medium-text);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    padding: 5px 0;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-header nav a::after { /* Soulignement dynamique */
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-blue-light);
-    transition: width 0.3s ease;
-}
-
-header nav a:hover {
-    color: var(--light-text);
-}
-
-header nav a:hover::after {
-    width: 100%;
-}
-
 /* Boutons */
 .btn {
     display: inline-block;
@@ -124,7 +61,6 @@ section:first-of-type {
 section:last-of-type {
     border-bottom: none; /* Pas de bordure sur la dernière section */
 }
-
 
 section h2 {
     text-align: center;
@@ -214,9 +150,13 @@ section h2 {
     border: 1px solid var(--accent-blue-light); /* Bordure pour le contraste */
 }
 
+.project-actions { /* Nouveau conteneur pour les boutons de lien */
+    margin-top: 20px;
+}
+
 .project-link {
     display: inline-block;
-    margin-top: 15px;
+    margin: 5px; /* Espacement autour des liens */
     color: var(--light-text);
     text-decoration: none;
     font-weight: bold;
@@ -247,15 +187,6 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 95%;
-    }
-
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
     }
 
     .hero {
