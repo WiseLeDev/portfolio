@@ -1,18 +1,18 @@
 [
     {
-        "id": "projet-1",
-        "title": "Project One",
-        "description": "...",
-        "techStack": ["Java"],
-        "githubLink": null,
+        "id": "minecraft-custom-ore-mod",
+        "title": "Je code vos idées (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des idées dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
+        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
+        "githubLink": "https://github.com/WiseLeDev/WiseLeDev",
         "liveDemoLink": null
     },
     {
-        "id": "projet-2",
-        "title": "Project Two",
-        "description": "...",
-        "techStack": ["Python"],
-        "githubLink": null,
+        "id": "minecraft-mob-behavior-mod",
+        "title": "Items Youtube (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des items des Youtubeurs dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge API.",
+        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
+        "githubLink": "https://github.com/WiseLeDev/WiseLeDev",
         "liveDemoLink": null
     }
 ]
