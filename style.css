@@ -28,6 +28,19 @@ body {
     padding: 20px 0;
 }
 
+.project-info-unavailable {
+    display: inline-block; /* Pour qu'il se comporte comme un bouton ou un tag */
+    padding: 8px 18px;
+    margin-top: 15px; /* Pour l'aligner avec les boutons */
+    color: var(--medium-text); /* Couleur de texte plus douce */
+    border: 1px dashed var(--border-color); /* Bordure en pointillés pour indiquer l'indisponibilité */
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: default; /* Change le curseur */
+    background-color: var(--card-bg); /* Ou une couleur légèrement différente si vous voulez */
+    margin-left: 10px; /* Pour l'espacement si plusieurs éléments */
+}
+
 /* Boutons */
 .btn {
     display: inline-block;
