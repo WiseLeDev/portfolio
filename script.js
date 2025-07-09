@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Le smooth scrolling pour la navigation peut être retiré car il n'y a plus de header avec nav links.
-    // Cependant, si tu as d'autres liens d'ancrage ailleurs, tu peux le laisser.
-    // Pour ce cas précis, on va le laisser car le bouton "Voir mes projets" du Hero utilise un lien d'ancrage.
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => { // Cible tous les liens d'ancrage
+    // Smooth scrolling pour les liens de navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
@@ -12,14 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
     // --- LOGIQUE POUR CHARGER ET AFFICHER LES PROJETS DEPUIS projects.json ---
     const projectGrid = document.querySelector('#projects .project-grid');
 
     async function loadAndDisplayProjects() {
         try {
             // Récupère les données du fichier projects.json
-            const response = await fetch('projets.json'); // Assure-toi que le nom du fichier est correct
+            const response = await fetch('projets.json');
             if (!response.ok) {
                 throw new Error(`Erreur HTTP: ${response.status}`);
             }
@@ -42,12 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Gère les liens optionnels
                 let linksHtml = '';
+
+                // Condition pour le lien GitHub
                 if (project.githubLink) {
                     linksHtml += `<a href="${project.githubLink}" target="_blank" class="project-link">Voir sur GitHub</a>`;
+                } else {
+                    linksHtml += `<span class="project-info-unavailable">GitHub: Pas encore disponible</span>`; // Nouveau span pour le texte
                 }
-                // Si tu as un déploiement live, tu peux ajouter ceci :
+
+                // Condition pour la démo live
                 if (project.liveDemoLink) {
                     linksHtml += `<a href="${project.liveDemoLink}" target="_blank" class="project-link" style="margin-left: 10px;">Démo Live</a>`;
+                } else {
+                    // Optionnel: Si vous voulez aussi afficher "Pas dispo" pour la démo live
+                    // linksHtml += `<span class="project-info-unavailable" style="margin-left: 10px;">Démo Live: Pas encore disponible</span>`;
+                }
+
+                // Condition pour la démonstration vidéo
+                if (project.videoDemonstration && project.videoDemonstration !== "Pas de démonstration vidéo pour le moment") { // Vérifie si le champ existe ET n'est pas le texte par défaut
+                    linksHtml += `<a href="${project.videoDemonstration}" target="_blank" class="project-link" style="margin-left: 10px;">Voir la vidéo</a>`;
+                } else {
+                    linksHtml += `<span class="project-info-unavailable" style="margin-left: 10px;">Vidéo: Pas de démonstration vidéo pour le moment</span>`; // Nouveau span pour le texte
                 }
 
 
