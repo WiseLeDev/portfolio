@@ -21,7 +21,7 @@
         "id": "minecraft-plugin-custom-manhunt",
         "title": "Plugin ManHunt (Minecraft)",
         "description": "Un plugin Minecraft qui ajoute un système de Manhunt dans Minecraft. Ce projet explore la gestion d'équipe, la définition de propriétés de largage de colis et l'intégration d'objets dans le jeu via Spigot API.",
-        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
+        "techStack": ["Java", "Minecraft Spigot API"],
         "githubLink": null,
         "videoDemonstration": "Pas de démonstration vidéo pour le moment",
         "liveDemoLink": null
