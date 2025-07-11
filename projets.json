@@ -4,7 +4,7 @@
         "title": "Je code vos idées (Minecraft)",
         "description": "Un mod Minecraft qui ajoute des idées dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
         "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
-        "githubLink": "null",
+        "githubLink": null,
         "videoDemonstration": "https://youtu.be/LIE9dyT5pvM?si=eA5-FVcrEt6MogLX",
         "liveDemoLink": null
     },
