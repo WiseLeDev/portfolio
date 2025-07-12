@@ -14,7 +14,7 @@
         "description": "Un mod Minecraft qui ajoute des items des Youtubeurs dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge API.",
         "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
         "githubLink": null,
-        "videoDemonstration": "Pas de démonstration vidéo pour le moment",
+        "videoDemonstration": "https://youtube.com/watch?v=gJ5Xhx9Ibpg",
         "liveDemoLink": null
     },
     {
