@@ -34,6 +34,14 @@
         "githubLink": null,
         "videoDemonstration": "Pas de démonstration vidéo pour le moment",
         "liveDemoLink": null
+    },
+    {
+        "id": "minecraft-custom-mod-survival",
+        "title": "CoreMod (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des outils, mobs de surie dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
+        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
+        "githubLink": null,
+        "videoDemonstration": null,
+        "liveDemoLink": null
     }
-
 ]
