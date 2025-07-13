@@ -25,5 +25,15 @@
         "githubLink": null,
         "videoDemonstration": "Pas de démonstration vidéo pour le moment",
         "liveDemoLink": null
+    },
+    {
+        "id": "minecraft-plugin-custom-coreplugin",
+        "title": "Plugin Core (Minecraft)",
+        "description": "Un plugin Minecraft qui ajoute tout un système de survie dans Minecraft. Ce projet explore la gestion de fichier, la définition de propriétés de permissions et l'intégration d'objets dans le jeu via Spigot API.",
+        "techStack": ["Java", "Minecraft Spigot API"],
+        "githubLink": null,
+        "videoDemonstration": "Pas de démonstration vidéo pour le moment",
+        "liveDemoLink": null
     }
+
 ]
