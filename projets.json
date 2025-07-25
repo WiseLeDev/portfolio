@@ -1,29 +1,29 @@
 [
     {
-        "id": "minecraft-custom-ore-mod",
-        "title": "Je code vos idées (Minecraft)",
-        "description": "Un mod Minecraft qui ajoute des idées dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
-        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
-        "githubLink": null,
-        "videoDemonstration": "https://youtu.be/LIE9dyT5pvM?si=eA5-FVcrEt6MogLX",
-        "liveDemoLink": null
+      "id": "minecraft-custom-server",
+      "title": "Serveur Minecraft Moddé",
+      "description": "Un serveur Minecraft survie moddé basé sur Forge/Spigot. Il intègre des plugins personnalisés (Core, Manhunt) et des mods (CoreMod, Items Youtube, etc.) avec configuration avancée, permissions, et système de sauvegarde automatisé.",
+      "techStack": ["Java", "Minecraft Forge", "Spigot", "LuckPerms", "ForgeMods", "Plugins Spigot"],
+      "githubLink": null,
+      "videoDemonstration": null,
+      "liveDemoLink": null
     },
     {
-        "id": "minecraft-mob-behavior-mod",
-        "title": "Items Youtube (Minecraft)",
-        "description": "Un mod Minecraft qui ajoute des items des Youtubeurs dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge API.",
-        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
-        "githubLink": null,
-        "videoDemonstration": "https://youtube.com/watch?v=gJ5Xhx9Ibpg",
-        "liveDemoLink": null
+      "id": "minecraft-custom-launcher",
+      "title": "Launcher Minecraft (JavaFX)",
+      "description": "Un launcher Minecraft personnalisé développé en Java avec JavaFX. Il permet la connexion Microsoft, la gestion des versions Forge/Fabric, le téléchargement des assets, et le lancement du jeu avec arguments personnalisés.",
+      "techStack": ["Java", "JavaFX", "Microsoft Authentication Library (MSAL)", "Minecraft LaunchWrapper", "FXML"],
+      "githubLink": null,
+      "videoDemonstration": null, 
+      "liveDemoLink": null
     },
     {
-        "id": "minecraft-plugin-custom-manhunt",
-        "title": "Plugin ManHunt (Minecraft)",
-        "description": "Un plugin Minecraft qui ajoute un système de Manhunt dans Minecraft. Ce projet explore la gestion d'équipe, la définition de propriétés de largage de colis et l'intégration d'objets dans le jeu via Spigot API.",
-        "techStack": ["Java", "Minecraft Spigot API"],
+        "id": "minecraft-custom-mod-survival",
+        "title": "CoreMod (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des outils, mobs de surie dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
+        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
         "githubLink": null,
-        "videoDemonstration": "Pas de démonstration vidéo pour le moment",
+        "videoDemonstration": null,
         "liveDemoLink": null
     },
     {
@@ -36,12 +36,30 @@
         "liveDemoLink": null
     },
     {
-        "id": "minecraft-custom-mod-survival",
-        "title": "CoreMod (Minecraft)",
-        "description": "Un mod Minecraft qui ajoute des outils, mobs de surie dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
+        "id": "minecraft-plugin-custom-manhunt",
+        "title": "Plugin ManHunt (Minecraft)",
+        "description": "Un plugin Minecraft qui ajoute un système de Manhunt dans Minecraft. Ce projet explore la gestion d'équipe, la définition de propriétés de largage de colis et l'intégration d'objets dans le jeu via Spigot API.",
+        "techStack": ["Java", "Minecraft Spigot API"],
+        "githubLink": null,
+        "videoDemonstration": "Pas de démonstration vidéo pour le moment",
+        "liveDemoLink": null
+    },
+    {
+        "id": "minecraft-mob-behavior-mod",
+        "title": "Items Youtube (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des items des Youtubeurs dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge API.",
         "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
         "githubLink": null,
-        "videoDemonstration": null,
+        "videoDemonstration": "https://youtube.com/watch?v=gJ5Xhx9Ibpg",
+        "liveDemoLink": null
+    },
+    {
+        "id": "minecraft-custom-ore-mod",
+        "title": "Je code vos idées (Minecraft)",
+        "description": "Un mod Minecraft qui ajoute des idées dans Minecraft. Ce projet explore la création de textures, la définition de propriétés de blocs et l'intégration d'objets dans le jeu via Forge/Fabric API.",
+        "techStack": ["Java", "Minecraft Forge API", "Blockbench (modélisation)", "JSON (pour définitions de recettes)"],
+        "githubLink": null,
+        "videoDemonstration": "https://youtu.be/LIE9dyT5pvM?si=eA5-FVcrEt6MogLX",
         "liveDemoLink": null
     }
 ]
